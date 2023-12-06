@@ -43,9 +43,6 @@ void initbattery() {
   PMIC.setMinimumSystemVoltage(batteryEmptyVoltage);          // Set the minimum battery output to 3.5V
   PMIC.setChargeVoltage(batteryFullVoltage);                  // Set battery voltage at full charge
   PMIC.setChargeCurrent((batteryCapacity/ 1000) / 2);         // Set battery current to C/2 in amps and convert stupid battery to AH
-  // The formula for calculating the output of a voltage divider is
-  // Vout = (Vsource x R2) / (R1 + R2)
-  // If we consider that 3.3V is the maximum that can be applied to Vout then the maximum source voltage is calculated as
   max_Source_voltage = (3.3 * (R1 + R2)) / R2;
 }
 
