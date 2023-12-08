@@ -7,7 +7,7 @@
 // my bodged c++, with that, enjoy!    //
 /////////////////////////////////////////
 
-#include <BQ24195.h>
+include <BQ24195.h>
 
 // Definition time
 float rawADC;             // Unprocessed ADC value
